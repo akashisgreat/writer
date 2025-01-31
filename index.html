@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>File Explorer</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <section>
+            <h1 logo>Writer</h1>
+        </section>
+        <section class="right">
+            <button class="home" id="homeButton">Home</button>
+            <button class="back hidden" id="backButton">Back</button>
+        </section>
+    </header>
+    <div class="current-path" id="currentPath"></div>
+    <div class="explorer" id="explorer"></div>
+
+    <script>
+        const xmlUrl = "data.xml"; // XML File URL
+        const pdfjsViewerPath = "pdfjs/web/viewer.html?file=";
+        let currentPath = "/"; // Store the current path
+
+        function fetchXML(url) {
+            return fetch(url)
+                .then(response => response.text())
+                .then(str => new window.DOMParser().parseFromString(str, "text/xml"))
+                .then(xml => convertXMLToJSON(xml.documentElement, ""));
+        }
+
+
+        function convertXMLToJSON(node, path = "") {
+            let obj = {};
+            let currentPath = path ? `${path}/${node.getAttribute("name")}` : node.getAttribute("name");
+
+            [...node.children].forEach(child => {
+                if (child.tagName === "file") {
+                    obj[child.getAttribute("name")] = `${currentPath}/${child.getAttribute("name")}`;
+                } else if (child.tagName === "directory") {
+                    obj[child.getAttribute("name")] = convertXMLToJSON(child, currentPath);
+                }
+            });
+            return obj;
+        }
+
+        let data = {};
+        let historyStack = [];
+
+        function createExplorer(parent, obj, path) {
+            parent.innerHTML = "";
+            currentPath = path; // Update current path
+
+            document.getElementById("currentPath").innerHTML = `<b>Path:</b> ${path}`; // Display current path
+
+            // document.getElementById("backButton").classList.toggle("hidden", historyStack.length === 0);
+            document.getElementById("backButton").classList.remove("hidden"); // Always show Back button
+
+
+            Object.keys(obj).forEach(key => {
+                let item;
+                if (typeof obj[key] === "string") {
+                    item = document.createElement("a");
+                    item.href = pdfjsViewerPath + '/' + obj[key];
+                    item.textContent = key;
+                    item.target = "_blank";
+                    item.classList.add("file");
+                } else {
+                    item = document.createElement("div");
+                    item.textContent = key;
+                    item.classList.add("folder");
+                    item.addEventListener("click", function () {
+                        historyStack.push({ obj, path }); // Save history with path
+                        // openFolder(obj[key], `${path}/${key}`);
+                        openFolder(obj[key], `${path}/${key}`.replace(/^\/+/, "/"));
+                    });
+                }
+                parent.appendChild(item);
+            });
+        }
+
+        function openFolder(folderObj, path) {
+            const explorer = document.getElementById("explorer");
+            createExplorer(explorer, folderObj, path);
+        }
+
+        document.getElementById("backButton").addEventListener("click", function () {
+            if (historyStack.length > 0) {
+                let previousState = historyStack.pop();
+                openFolder(previousState.obj, previousState.path);
+            }
+        });
+
+        document.getElementById("homeButton").addEventListener("click", function () {
+            historyStack = []; // Clear history
+            openFolder(data, "/"); // Reset to root
+        });
+
+        document.addEventListener("DOMContentLoaded", function () {
+            fetchXML(xmlUrl).then(parsedData => {
+                data = parsedData;
+                openFolder(data, "/");
+            }).catch(error => console.error("Error loading XML:", error));
+        });
+    </script>
+</body>
+
+</html>

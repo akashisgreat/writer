@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tree>
+  <directory name="data">
+    <directory name="NCERT">
+      <directory name="11 Physics">
+        <file name="keph104.xopp.pdf"></file>
+      </directory>
+      <directory name="6 SocialScience">
+        <file name="fhes103.xopp.pdf"></file>
+      </directory>
+      <file name="goman.xopp.pdf"></file>
+    </directory>
+    <directory name="NCERT (copy 1)">
+      <directory name="11 Physics">
+        <file name="keph104.xopp.pdf"></file>
+      </directory>
+      <directory name="6 SocialScience">
+        <file name="fhes103.xopp.pdf"></file>
+      </directory>
+      <file name="goman.xopp.pdf"></file>
+    </directory>
+  </directory>
+</tree>
