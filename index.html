@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>File Explorer</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="root/style.css">
     <style>
         .hidden {
             display: none;
@@ -28,7 +28,7 @@
 
     <script>
         const xmlUrl = "data.xml"; // XML File URL
-        const pdfjsViewerPath = "pdfjs/web/viewer.html?file=";
+        const pdfjsViewerPath = "root/pdfjs/web/viewer.html?file=";
         let currentPath = "/"; // Store the current path
 
         function fetchXML(url) {
@@ -70,7 +70,7 @@
                 let item;
                 if (typeof obj[key] === "string") {
                     item = document.createElement("a");
-                    item.href = pdfjsViewerPath + '/' + obj[key];
+                    item.href = pdfjsViewerPath + '../../../' + obj[key];
                     item.textContent = key;
                     item.target = "_blank";
                     item.classList.add("file");
