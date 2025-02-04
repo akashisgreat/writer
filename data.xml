@@ -1,21 +1,648 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <tree>
-  <directory name="data">
-    <directory name="home">
-      <directory name="akash">
-        <directory name="med">
-          <directory name="books">
-            <directory name="NCERT">
-              <directory name="11 Physics">
-                <file name="keph104.xopp.pdf"></file>
-              </directory>
-              <directory name="6 SocialScience">
-                <file name="fhes103.xopp.pdf"></file>
+  <directory name=".">
+    <file name="build.md"></file>
+    <directory name="data">
+      <directory name="home">
+        <directory name="akash">
+          <directory name="med">
+            <directory name="books">
+              <directory name="NCERT">
+                <directory name="11">
+                  <directory name="Physics">
+                    <file name="keph104.xopp.pdf"></file>
+                  </directory>
+                </directory>
+                <directory name="11 Physics">
+                  <file name="keph104.xopp.pdf"></file>
+                </directory>
+                <directory name="6">
+                  <directory name="SocialScience">
+                    <file name="fhes103.xopp.pdf"></file>
+                    <file name="fhes104.xopp.pdf"></file>
+                  </directory>
+                </directory>
+                <directory name="6 SocialScience">
+                  <file name="fhes103.xopp.pdf"></file>
+                </directory>
               </directory>
             </directory>
           </directory>
         </directory>
       </directory>
     </directory>
+    <file name="data.xml"></file>
+    <file name="index.html"></file>
+    <directory name="root">
+      <directory name="pdfjs">
+        <directory name="build">
+          <file name="pdf.mjs"></file>
+          <file name="pdf.mjs.map"></file>
+          <file name="pdf.sandbox.mjs"></file>
+          <file name="pdf.sandbox.mjs.map"></file>
+          <file name="pdf.worker.mjs"></file>
+          <file name="pdf.worker.mjs.map"></file>
+        </directory>
+        <file name="LICENSE"></file>
+        <directory name="web">
+          <directory name="cmaps">
+            <file name="78-EUC-H.bcmap"></file>
+            <file name="78-EUC-V.bcmap"></file>
+            <file name="78-H.bcmap"></file>
+            <file name="78ms-RKSJ-H.bcmap"></file>
+            <file name="78ms-RKSJ-V.bcmap"></file>
+            <file name="78-RKSJ-H.bcmap"></file>
+            <file name="78-RKSJ-V.bcmap"></file>
+            <file name="78-V.bcmap"></file>
+            <file name="83pv-RKSJ-H.bcmap"></file>
+            <file name="90msp-RKSJ-H.bcmap"></file>
+            <file name="90msp-RKSJ-V.bcmap"></file>
+            <file name="90ms-RKSJ-H.bcmap"></file>
+            <file name="90ms-RKSJ-V.bcmap"></file>
+            <file name="90pv-RKSJ-H.bcmap"></file>
+            <file name="90pv-RKSJ-V.bcmap"></file>
+            <file name="Add-H.bcmap"></file>
+            <file name="Add-RKSJ-H.bcmap"></file>
+            <file name="Add-RKSJ-V.bcmap"></file>
+            <file name="Add-V.bcmap"></file>
+            <file name="Adobe-CNS1-0.bcmap"></file>
+            <file name="Adobe-CNS1-1.bcmap"></file>
+            <file name="Adobe-CNS1-2.bcmap"></file>
+            <file name="Adobe-CNS1-3.bcmap"></file>
+            <file name="Adobe-CNS1-4.bcmap"></file>
+            <file name="Adobe-CNS1-5.bcmap"></file>
+            <file name="Adobe-CNS1-6.bcmap"></file>
+            <file name="Adobe-CNS1-UCS2.bcmap"></file>
+            <file name="Adobe-GB1-0.bcmap"></file>
+            <file name="Adobe-GB1-1.bcmap"></file>
+            <file name="Adobe-GB1-2.bcmap"></file>
+            <file name="Adobe-GB1-3.bcmap"></file>
+            <file name="Adobe-GB1-4.bcmap"></file>
+            <file name="Adobe-GB1-5.bcmap"></file>
+            <file name="Adobe-GB1-UCS2.bcmap"></file>
+            <file name="Adobe-Japan1-0.bcmap"></file>
+            <file name="Adobe-Japan1-1.bcmap"></file>
+            <file name="Adobe-Japan1-2.bcmap"></file>
+            <file name="Adobe-Japan1-3.bcmap"></file>
+            <file name="Adobe-Japan1-4.bcmap"></file>
+            <file name="Adobe-Japan1-5.bcmap"></file>
+            <file name="Adobe-Japan1-6.bcmap"></file>
+            <file name="Adobe-Japan1-UCS2.bcmap"></file>
+            <file name="Adobe-Korea1-0.bcmap"></file>
+            <file name="Adobe-Korea1-1.bcmap"></file>
+            <file name="Adobe-Korea1-2.bcmap"></file>
+            <file name="Adobe-Korea1-UCS2.bcmap"></file>
+            <file name="B5-H.bcmap"></file>
+            <file name="B5pc-H.bcmap"></file>
+            <file name="B5pc-V.bcmap"></file>
+            <file name="B5-V.bcmap"></file>
+            <file name="CNS1-H.bcmap"></file>
+            <file name="CNS1-V.bcmap"></file>
+            <file name="CNS2-H.bcmap"></file>
+            <file name="CNS2-V.bcmap"></file>
+            <file name="CNS-EUC-H.bcmap"></file>
+            <file name="CNS-EUC-V.bcmap"></file>
+            <file name="ETen-B5-H.bcmap"></file>
+            <file name="ETen-B5-V.bcmap"></file>
+            <file name="ETenms-B5-H.bcmap"></file>
+            <file name="ETenms-B5-V.bcmap"></file>
+            <file name="ETHK-B5-H.bcmap"></file>
+            <file name="ETHK-B5-V.bcmap"></file>
+            <file name="EUC-H.bcmap"></file>
+            <file name="EUC-V.bcmap"></file>
+            <file name="Ext-H.bcmap"></file>
+            <file name="Ext-RKSJ-H.bcmap"></file>
+            <file name="Ext-RKSJ-V.bcmap"></file>
+            <file name="Ext-V.bcmap"></file>
+            <file name="GB-EUC-H.bcmap"></file>
+            <file name="GB-EUC-V.bcmap"></file>
+            <file name="GB-H.bcmap"></file>
+            <file name="GBK2K-H.bcmap"></file>
+            <file name="GBK2K-V.bcmap"></file>
+            <file name="GBK-EUC-H.bcmap"></file>
+            <file name="GBK-EUC-V.bcmap"></file>
+            <file name="GBKp-EUC-H.bcmap"></file>
+            <file name="GBKp-EUC-V.bcmap"></file>
+            <file name="GBpc-EUC-H.bcmap"></file>
+            <file name="GBpc-EUC-V.bcmap"></file>
+            <file name="GBT-EUC-H.bcmap"></file>
+            <file name="GBT-EUC-V.bcmap"></file>
+            <file name="GBT-H.bcmap"></file>
+            <file name="GBTpc-EUC-H.bcmap"></file>
+            <file name="GBTpc-EUC-V.bcmap"></file>
+            <file name="GBT-V.bcmap"></file>
+            <file name="GB-V.bcmap"></file>
+            <file name="Hankaku.bcmap"></file>
+            <file name="H.bcmap"></file>
+            <file name="Hiragana.bcmap"></file>
+            <file name="HKdla-B5-H.bcmap"></file>
+            <file name="HKdla-B5-V.bcmap"></file>
+            <file name="HKdlb-B5-H.bcmap"></file>
+            <file name="HKdlb-B5-V.bcmap"></file>
+            <file name="HKgccs-B5-H.bcmap"></file>
+            <file name="HKgccs-B5-V.bcmap"></file>
+            <file name="HKm314-B5-H.bcmap"></file>
+            <file name="HKm314-B5-V.bcmap"></file>
+            <file name="HKm471-B5-H.bcmap"></file>
+            <file name="HKm471-B5-V.bcmap"></file>
+            <file name="HKscs-B5-H.bcmap"></file>
+            <file name="HKscs-B5-V.bcmap"></file>
+            <file name="Katakana.bcmap"></file>
+            <file name="KSC-EUC-H.bcmap"></file>
+            <file name="KSC-EUC-V.bcmap"></file>
+            <file name="KSC-H.bcmap"></file>
+            <file name="KSC-Johab-H.bcmap"></file>
+            <file name="KSC-Johab-V.bcmap"></file>
+            <file name="KSCms-UHC-H.bcmap"></file>
+            <file name="KSCms-UHC-HW-H.bcmap"></file>
+            <file name="KSCms-UHC-HW-V.bcmap"></file>
+            <file name="KSCms-UHC-V.bcmap"></file>
+            <file name="KSCpc-EUC-H.bcmap"></file>
+            <file name="KSCpc-EUC-V.bcmap"></file>
+            <file name="KSC-V.bcmap"></file>
+            <file name="LICENSE"></file>
+            <file name="NWP-H.bcmap"></file>
+            <file name="NWP-V.bcmap"></file>
+            <file name="RKSJ-H.bcmap"></file>
+            <file name="RKSJ-V.bcmap"></file>
+            <file name="Roman.bcmap"></file>
+            <file name="UniCNS-UCS2-H.bcmap"></file>
+            <file name="UniCNS-UCS2-V.bcmap"></file>
+            <file name="UniCNS-UTF16-H.bcmap"></file>
+            <file name="UniCNS-UTF16-V.bcmap"></file>
+            <file name="UniCNS-UTF32-H.bcmap"></file>
+            <file name="UniCNS-UTF32-V.bcmap"></file>
+            <file name="UniCNS-UTF8-H.bcmap"></file>
+            <file name="UniCNS-UTF8-V.bcmap"></file>
+            <file name="UniGB-UCS2-H.bcmap"></file>
+            <file name="UniGB-UCS2-V.bcmap"></file>
+            <file name="UniGB-UTF16-H.bcmap"></file>
+            <file name="UniGB-UTF16-V.bcmap"></file>
+            <file name="UniGB-UTF32-H.bcmap"></file>
+            <file name="UniGB-UTF32-V.bcmap"></file>
+            <file name="UniGB-UTF8-H.bcmap"></file>
+            <file name="UniGB-UTF8-V.bcmap"></file>
+            <file name="UniJIS2004-UTF16-H.bcmap"></file>
+            <file name="UniJIS2004-UTF16-V.bcmap"></file>
+            <file name="UniJIS2004-UTF32-H.bcmap"></file>
+            <file name="UniJIS2004-UTF32-V.bcmap"></file>
+            <file name="UniJIS2004-UTF8-H.bcmap"></file>
+            <file name="UniJIS2004-UTF8-V.bcmap"></file>
+            <file name="UniJISPro-UCS2-HW-V.bcmap"></file>
+            <file name="UniJISPro-UCS2-V.bcmap"></file>
+            <file name="UniJISPro-UTF8-V.bcmap"></file>
+            <file name="UniJIS-UCS2-H.bcmap"></file>
+            <file name="UniJIS-UCS2-HW-H.bcmap"></file>
+            <file name="UniJIS-UCS2-HW-V.bcmap"></file>
+            <file name="UniJIS-UCS2-V.bcmap"></file>
+            <file name="UniJIS-UTF16-H.bcmap"></file>
+            <file name="UniJIS-UTF16-V.bcmap"></file>
+            <file name="UniJIS-UTF32-H.bcmap"></file>
+            <file name="UniJIS-UTF32-V.bcmap"></file>
+            <file name="UniJIS-UTF8-H.bcmap"></file>
+            <file name="UniJIS-UTF8-V.bcmap"></file>
+            <file name="UniJISX02132004-UTF32-H.bcmap"></file>
+            <file name="UniJISX02132004-UTF32-V.bcmap"></file>
+            <file name="UniJISX0213-UTF32-H.bcmap"></file>
+            <file name="UniJISX0213-UTF32-V.bcmap"></file>
+            <file name="UniKS-UCS2-H.bcmap"></file>
+            <file name="UniKS-UCS2-V.bcmap"></file>
+            <file name="UniKS-UTF16-H.bcmap"></file>
+            <file name="UniKS-UTF16-V.bcmap"></file>
+            <file name="UniKS-UTF32-H.bcmap"></file>
+            <file name="UniKS-UTF32-V.bcmap"></file>
+            <file name="UniKS-UTF8-H.bcmap"></file>
+            <file name="UniKS-UTF8-V.bcmap"></file>
+            <file name="V.bcmap"></file>
+            <file name="WP-Symbol.bcmap"></file>
+          </directory>
+          <file name="compressed.tracemonkey-pldi-09.pdf"></file>
+          <file name="debugger.css"></file>
+          <file name="debugger.mjs"></file>
+          <directory name="images">
+            <file name="altText_add.svg"></file>
+            <file name="altText_done.svg"></file>
+            <file name="annotation-check.svg"></file>
+            <file name="annotation-comment.svg"></file>
+            <file name="annotation-help.svg"></file>
+            <file name="annotation-insert.svg"></file>
+            <file name="annotation-key.svg"></file>
+            <file name="annotation-newparagraph.svg"></file>
+            <file name="annotation-noicon.svg"></file>
+            <file name="annotation-note.svg"></file>
+            <file name="annotation-paperclip.svg"></file>
+            <file name="annotation-paragraph.svg"></file>
+            <file name="annotation-pushpin.svg"></file>
+            <file name="cursor-editorFreeText.svg"></file>
+            <file name="cursor-editorInk.svg"></file>
+            <file name="editor-toolbar-delete.svg"></file>
+            <file name="findbarButton-next.svg"></file>
+            <file name="findbarButton-previous.svg"></file>
+            <file name="gv-toolbarButton-download.svg"></file>
+            <file name="gv-toolbarButton-openinapp.svg"></file>
+            <file name="loading-icon.gif"></file>
+            <file name="loading.svg"></file>
+            <file name="secondaryToolbarButton-documentProperties.svg"></file>
+            <file name="secondaryToolbarButton-firstPage.svg"></file>
+            <file name="secondaryToolbarButton-handTool.svg"></file>
+            <file name="secondaryToolbarButton-lastPage.svg"></file>
+            <file name="secondaryToolbarButton-rotateCcw.svg"></file>
+            <file name="secondaryToolbarButton-rotateCw.svg"></file>
+            <file name="secondaryToolbarButton-scrollHorizontal.svg"></file>
+            <file name="secondaryToolbarButton-scrollPage.svg"></file>
+            <file name="secondaryToolbarButton-scrollVertical.svg"></file>
+            <file name="secondaryToolbarButton-scrollWrapped.svg"></file>
+            <file name="secondaryToolbarButton-selectTool.svg"></file>
+            <file name="secondaryToolbarButton-spreadEven.svg"></file>
+            <file name="secondaryToolbarButton-spreadNone.svg"></file>
+            <file name="secondaryToolbarButton-spreadOdd.svg"></file>
+            <file name="toolbarButton-bookmark.svg"></file>
+            <file name="toolbarButton-currentOutlineItem.svg"></file>
+            <file name="toolbarButton-download.svg"></file>
+            <file name="toolbarButton-editorFreeText.svg"></file>
+            <file name="toolbarButton-editorHighlight.svg"></file>
+            <file name="toolbarButton-editorInk.svg"></file>
+            <file name="toolbarButton-editorStamp.svg"></file>
+            <file name="toolbarButton-menuArrow.svg"></file>
+            <file name="toolbarButton-openFile.svg"></file>
+            <file name="toolbarButton-pageDown.svg"></file>
+            <file name="toolbarButton-pageUp.svg"></file>
+            <file name="toolbarButton-presentationMode.svg"></file>
+            <file name="toolbarButton-print.svg"></file>
+            <file name="toolbarButton-search.svg"></file>
+            <file name="toolbarButton-secondaryToolbarToggle.svg"></file>
+            <file name="toolbarButton-sidebarToggle.svg"></file>
+            <file name="toolbarButton-viewAttachments.svg"></file>
+            <file name="toolbarButton-viewLayers.svg"></file>
+            <file name="toolbarButton-viewOutline.svg"></file>
+            <file name="toolbarButton-viewThumbnail.svg"></file>
+            <file name="toolbarButton-zoomIn.svg"></file>
+            <file name="toolbarButton-zoomOut.svg"></file>
+            <file name="treeitem-collapsed.svg"></file>
+            <file name="treeitem-expanded.svg"></file>
+          </directory>
+          <directory name="locale">
+            <directory name="ach">
+              <file name="viewer.ftl"></file>
+            </directory>
+            <directory name="af">
+              <file name="viewer.ftl"></file>
+            </directory>
+            <directory name="an">
+              <file name="viewer.ftl"></file>
+            </directory>
+            <directory name="ar">
+              <file name="viewer.ftl"></file>
+            </directory>
+            <directory name="ast">
+              <file name="viewer.ftl"></file>
+            </directory>
+            <directory name="az">
+              <file name="viewer.ftl"></file>
+            </directory>
+            <directory name="be">
+              <file name="viewer.ftl"></file>
+            </directory>
+            <directory name="bg">
+              <file name="viewer.ftl"></file>
+            </directory>
+            <directory name="bn">
+              <file name="viewer.ftl"></file>
+            </directory>
+            <directory name="bo">
+              <file name="viewer.ftl"></file>
+            </directory>
+            <directory name="br">
+              <file name="viewer.ftl"></file>
+            </directory>
+            <directory name="brx">
+              <file name="viewer.ftl"></file>
+            </directory>
+            <directory name="bs">
+              <file name="viewer.ftl"></file>
+            </directory>
+            <directory name="ca">
+              <file name="viewer.ftl"></file>
+            </directory>
+            <directory name="cak">
+              <file name="viewer.ftl"></file>
+            </directory>
+            <directory name="ckb">
+              <file name="viewer.ftl"></file>
+            </directory>
+            <directory name="cs">
+              <file name="viewer.ftl"></file>
+            </directory>
+            <directory name="cy">
+              <file name="viewer.ftl"></file>
+            </directory>
+            <directory name="da">
+              <file name="viewer.ftl"></file>
+            </directory>
+            <directory name="de">
+              <file name="viewer.ftl"></file>
+            </directory>
+            <directory name="dsb">
+              <file name="viewer.ftl"></file>
+            </directory>
+            <directory name="el">
+              <file name="viewer.ftl"></file>
+            </directory>
+            <directory name="en-CA">
+              <file name="viewer.ftl"></file>
+            </directory>
+            <directory name="en-GB">
+              <file name="viewer.ftl"></file>
+            </directory>
+            <directory name="en-US">
+              <file name="viewer.ftl"></file>
+            </directory>
+            <directory name="eo">
+              <file name="viewer.ftl"></file>
+            </directory>
+            <directory name="es-AR">
+              <file name="viewer.ftl"></file>
+            </directory>
+            <directory name="es-CL">
+              <file name="viewer.ftl"></file>
+            </directory>
+            <directory name="es-ES">
+              <file name="viewer.ftl"></file>
+            </directory>
+            <directory name="es-MX">
+              <file name="viewer.ftl"></file>
+            </directory>
+            <directory name="et">
+              <file name="viewer.ftl"></file>
+            </directory>
+            <directory name="eu">
+              <file name="viewer.ftl"></file>
+            </directory>
+            <directory name="fa">
+              <file name="viewer.ftl"></file>
+            </directory>
+            <directory name="ff">
+              <file name="viewer.ftl"></file>
+            </directory>
+            <directory name="fi">
+              <file name="viewer.ftl"></file>
+            </directory>
+            <directory name="fr">
+              <file name="viewer.ftl"></file>
+            </directory>
+            <directory name="fur">
+              <file name="viewer.ftl"></file>
+            </directory>
+            <directory name="fy-NL">
+              <file name="viewer.ftl"></file>
+            </directory>
+            <directory name="ga-IE">
+              <file name="viewer.ftl"></file>
+            </directory>
+            <directory name="gd">
+              <file name="viewer.ftl"></file>
+            </directory>
+            <directory name="gl">
+              <file name="viewer.ftl"></file>
+            </directory>
+            <directory name="gn">
+              <file name="viewer.ftl"></file>
+            </directory>
+            <directory name="gu-IN">
+              <file name="viewer.ftl"></file>
+            </directory>
+            <directory name="he">
+              <file name="viewer.ftl"></file>
+            </directory>
+            <directory name="hi-IN">
+              <file name="viewer.ftl"></file>
+            </directory>
+            <directory name="hr">
+              <file name="viewer.ftl"></file>
+            </directory>
+            <directory name="hsb">
+              <file name="viewer.ftl"></file>
+            </directory>
+            <directory name="hu">
+              <file name="viewer.ftl"></file>
+            </directory>
+            <directory name="hy-AM">
+              <file name="viewer.ftl"></file>
+            </directory>
+            <directory name="hye">
+              <file name="viewer.ftl"></file>
+            </directory>
+            <directory name="ia">
+              <file name="viewer.ftl"></file>
+            </directory>
+            <directory name="id">
+              <file name="viewer.ftl"></file>
+            </directory>
+            <directory name="is">
+              <file name="viewer.ftl"></file>
+            </directory>
+            <directory name="it">
+              <file name="viewer.ftl"></file>
+            </directory>
+            <directory name="ja">
+              <file name="viewer.ftl"></file>
+            </directory>
+            <directory name="ka">
+              <file name="viewer.ftl"></file>
+            </directory>
+            <directory name="kab">
+              <file name="viewer.ftl"></file>
+            </directory>
+            <directory name="kk">
+              <file name="viewer.ftl"></file>
+            </directory>
+            <directory name="km">
+              <file name="viewer.ftl"></file>
+            </directory>
+            <directory name="kn">
+              <file name="viewer.ftl"></file>
+            </directory>
+            <directory name="ko">
+              <file name="viewer.ftl"></file>
+            </directory>
+            <directory name="lij">
+              <file name="viewer.ftl"></file>
+            </directory>
+            <directory name="lo">
+              <file name="viewer.ftl"></file>
+            </directory>
+            <file name="locale.json"></file>
+            <directory name="lt">
+              <file name="viewer.ftl"></file>
+            </directory>
+            <directory name="ltg">
+              <file name="viewer.ftl"></file>
+            </directory>
+            <directory name="lv">
+              <file name="viewer.ftl"></file>
+            </directory>
+            <directory name="meh">
+              <file name="viewer.ftl"></file>
+            </directory>
+            <directory name="mk">
+              <file name="viewer.ftl"></file>
+            </directory>
+            <directory name="mr">
+              <file name="viewer.ftl"></file>
+            </directory>
+            <directory name="ms">
+              <file name="viewer.ftl"></file>
+            </directory>
+            <directory name="my">
+              <file name="viewer.ftl"></file>
+            </directory>
+            <directory name="nb-NO">
+              <file name="viewer.ftl"></file>
+            </directory>
+            <directory name="ne-NP">
+              <file name="viewer.ftl"></file>
+            </directory>
+            <directory name="nl">
+              <file name="viewer.ftl"></file>
+            </directory>
+            <directory name="nn-NO">
+              <file name="viewer.ftl"></file>
+            </directory>
+            <directory name="oc">
+              <file name="viewer.ftl"></file>
+            </directory>
+            <directory name="pa-IN">
+              <file name="viewer.ftl"></file>
+            </directory>
+            <directory name="pl">
+              <file name="viewer.ftl"></file>
+            </directory>
+            <directory name="pt-BR">
+              <file name="viewer.ftl"></file>
+            </directory>
+            <directory name="pt-PT">
+              <file name="viewer.ftl"></file>
+            </directory>
+            <directory name="rm">
+              <file name="viewer.ftl"></file>
+            </directory>
+            <directory name="ro">
+              <file name="viewer.ftl"></file>
+            </directory>
+            <directory name="ru">
+              <file name="viewer.ftl"></file>
+            </directory>
+            <directory name="sat">
+              <file name="viewer.ftl"></file>
+            </directory>
+            <directory name="sc">
+              <file name="viewer.ftl"></file>
+            </directory>
+            <directory name="scn">
+              <file name="viewer.ftl"></file>
+            </directory>
+            <directory name="sco">
+              <file name="viewer.ftl"></file>
+            </directory>
+            <directory name="si">
+              <file name="viewer.ftl"></file>
+            </directory>
+            <directory name="sk">
+              <file name="viewer.ftl"></file>
+            </directory>
+            <directory name="skr">
+              <file name="viewer.ftl"></file>
+            </directory>
+            <directory name="sl">
+              <file name="viewer.ftl"></file>
+            </directory>
+            <directory name="son">
+              <file name="viewer.ftl"></file>
+            </directory>
+            <directory name="sq">
+              <file name="viewer.ftl"></file>
+            </directory>
+            <directory name="sr">
+              <file name="viewer.ftl"></file>
+            </directory>
+            <directory name="sv-SE">
+              <file name="viewer.ftl"></file>
+            </directory>
+            <directory name="szl">
+              <file name="viewer.ftl"></file>
+            </directory>
+            <directory name="ta">
+              <file name="viewer.ftl"></file>
+            </directory>
+            <directory name="te">
+              <file name="viewer.ftl"></file>
+            </directory>
+            <directory name="tg">
+              <file name="viewer.ftl"></file>
+            </directory>
+            <directory name="th">
+              <file name="viewer.ftl"></file>
+            </directory>
+            <directory name="tl">
+              <file name="viewer.ftl"></file>
+            </directory>
+            <directory name="tr">
+              <file name="viewer.ftl"></file>
+            </directory>
+            <directory name="trs">
+              <file name="viewer.ftl"></file>
+            </directory>
+            <directory name="uk">
+              <file name="viewer.ftl"></file>
+            </directory>
+            <directory name="ur">
+              <file name="viewer.ftl"></file>
+            </directory>
+            <directory name="uz">
+              <file name="viewer.ftl"></file>
+            </directory>
+            <directory name="vi">
+              <file name="viewer.ftl"></file>
+            </directory>
+            <directory name="wo">
+              <file name="viewer.ftl"></file>
+            </directory>
+            <directory name="xh">
+              <file name="viewer.ftl"></file>
+            </directory>
+            <directory name="zh-CN">
+              <file name="viewer.ftl"></file>
+            </directory>
+            <directory name="zh-TW">
+              <file name="viewer.ftl"></file>
+            </directory>
+          </directory>
+          <directory name="standard_fonts">
+            <file name="FoxitDingbats.pfb"></file>
+            <file name="FoxitFixedBoldItalic.pfb"></file>
+            <file name="FoxitFixedBold.pfb"></file>
+            <file name="FoxitFixedItalic.pfb"></file>
+            <file name="FoxitFixed.pfb"></file>
+            <file name="FoxitSerifBoldItalic.pfb"></file>
+            <file name="FoxitSerifBold.pfb"></file>
+            <file name="FoxitSerifItalic.pfb"></file>
+            <file name="FoxitSerif.pfb"></file>
+            <file name="FoxitSymbol.pfb"></file>
+            <file name="LiberationSans-BoldItalic.ttf"></file>
+            <file name="LiberationSans-Bold.ttf"></file>
+            <file name="LiberationSans-Italic.ttf"></file>
+            <file name="LiberationSans-Regular.ttf"></file>
+            <file name="LICENSE_FOXIT"></file>
+            <file name="LICENSE_LIBERATION"></file>
+          </directory>
+          <file name="viewer.css"></file>
+          <file name="viewer.html"></file>
+          <file name="viewer.mjs"></file>
+          <file name="viewer.mjs.map"></file>
+        </directory>
+      </directory>
+      <file name="style.css"></file>
+    </directory>
+    <file name="xopp2pdf-with-nested.sh"></file>
   </directory>
 </tree>
