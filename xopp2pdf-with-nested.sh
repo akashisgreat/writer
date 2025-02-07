@@ -20,3 +20,8 @@ find "$INPUT_DIR" -type f -name "*.xopp" | while read -r file; do
     #echo "Converted: $file -> $OUTPUT_PATH/${REL_PATH##*/}.pdf"
 done
 
+echo "tree data --noreport -X -o data.xml
+git add -A
+git commit -m 'updated'
+git push
+"

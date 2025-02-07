@@ -1,33 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <tree>
   <directory name="data">
-    <directory name="home">
-      <directory name="akash">
-        <directory name="med">
-          <directory name="books">
-            <directory name="NCERT">
-              <directory name="11">
-                <directory name="Physics">
-                  <file name="keph104.xopp.pdf"></file>
-                </directory>
-              </directory>
-              <directory name="11 Physics">
-                <file name="keph104.xopp.pdf"></file>
-              </directory>
-              <directory name="6">
-                <directory name="SocialScience">
-                  <file name="fhes103.xopp.pdf"></file>
-                  <file name="fhes104.xopp.pdf"></file>
-                </directory>
-              </directory>
-              <directory name="6 SocialScience">
-                <file name="fhes103.xopp.pdf"></file>
-              </directory>
-            </directory>
-          </directory>
-        </directory>
-      </directory>
-    </directory>
     <directory name="NCERT">
       <directory name="11">
         <directory name="Physics">
@@ -38,11 +11,13 @@
         <directory name="SocialScience">
           <file name="fhes103.xopp.pdf"></file>
           <file name="fhes104.xopp.pdf"></file>
+          <file name="fhes105.xopp.pdf"></file>
+          <file name="fhes106.xopp.pdf"></file>
         </directory>
       </directory>
     </directory>
-    <directory name="xournal-usage.xopp">
-      <file name="xournal-usage.xopp.pdf"></file>
+    <directory name="SSA Job">
+      <file name="notes.xopp.pdf"></file>
     </directory>
   </directory>
 </tree>
