@@ -13,10 +13,12 @@
           <file name="fhes104.xopp.pdf"></file>
           <file name="fhes105.xopp.pdf"></file>
           <file name="fhes106.xopp.pdf"></file>
+          <file name="fhes107.xopp.pdf"></file>
         </directory>
       </directory>
     </directory>
     <directory name="SSA Job">
+      <file name="amin concept.xopp.pdf"></file>
       <file name="notes.xopp.pdf"></file>
     </directory>
   </directory>
